@@ -2,11 +2,13 @@
 <title>brr</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <body style="margin:0">
-<script src="http://13.235.252.157:7002/live/streamindia.m3u8"></script>
-<script src="http://103.102.136.106:8080/cmcltv/gtv_th.m3u8"></script>
+<script src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
+<script src="https://cdn.jsdelivr.net/clappr.level-selector/latest/level-selector.min.js"></script>
+<script src="https://cdn.jsdelivr.net/clappr.chromecast-plugin/latest/clappr-chromecast-plugin.js"></script>
 <div id="player"></div>
 <script>var player = new Clappr.Player({
-source: "<?php echo ['vid'] ?>",
+source: "http://13.235.252.157:7002/live/streamindia.m3u8>",
+source: "http://103.102.136.106:8080/cmcltv/gtv_th.m3u8>"
 plugins: [LevelSelector, ChromecastPlugin],
 parentId: "#player",
 height: "100%",
